@@ -1,0 +1,23 @@
+.pokemon-card {
+  margin: 5px;
+  width: 350px;
+
+  .pokemon-avatar {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    background-color: black;
+    border-radius: 50%;
+
+    h2 {
+      color: white;
+      margin: auto;
+      text-align: center;
+    }
+  }
+
+  mat-card-actions {
+    text-align: right;
+  }
+}

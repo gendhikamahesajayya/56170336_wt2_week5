@@ -1,0 +1,19 @@
+@import "../../styles.scss";
+
+.pokemon-image {
+  float: left;
+  margin: 10px;
+}
+
+.pokemon-stat {
+  .category {
+    font-size: 1.2em;
+    color: $primary;
+    margin-right: 10px;
+  }
+
+  .value {
+    color: $grey;
+  }
+
+}

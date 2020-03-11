@@ -1,0 +1,7 @@
+<div class="container">
+  <app-card
+    *ngFor="let pokemon of pokemons"
+    [pokemon]="pokemon"
+    (detailClickHandler)="goToDetail($event)"
+  ></app-card>
+</div>

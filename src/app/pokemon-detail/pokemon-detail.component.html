@@ -1,0 +1,46 @@
+<div class="pokemon-detail">
+  <div class="pokemon-image">
+    <img [src]='"assets/pokemon/"+ pokemon.id +".png"' [alt]="'Picture of ' + pokemon.name" />
+  </div>
+  <div class="pokemon-stat">
+    <p>
+      <span class="category">ID</span>
+      <span class="value">{{ pokemon.id }}</span>
+    </p>
+    <p>
+      <span class="category">Name</span>
+      <span class="value">{{ pokemon.name }}</span>
+    </p>
+    <p>
+      <span class="category">Type</span>
+      <span class="value">{{ pokemon.firstType }}</span>
+      <span class="value" *ngIf="pokemon.secondType"
+        >/{{ pokemon.secondType }}</span
+      >
+    </p>
+    <p>
+      <span class="category">Is Legendary?</span>
+      <span class="value">{{ pokemon.legendary ? "True" : "False" }}</span>
+    </p>
+    <p>
+      <span class="category">Attack</span>
+      <span class="value">{{ pokemon.attack }}</span>
+    </p>
+    <p>
+      <span class="category">Defense</span>
+      <span class="value">{{ pokemon.defense }}</span>
+    </p>
+    <p>
+      <span class="category">Special Attack</span>
+      <span class="value">{{ pokemon.specialAttack }}</span>
+    </p>
+    <p>
+      <span class="category">Special Defense</span>
+      <span class="value">{{ pokemon.specialDefense }}</span>
+    </p>
+    <p>
+      <span class="category">Speed</span>
+      <span class="value">{{ pokemon.speed }}</span>
+    </p>
+  </div>
+</div>
